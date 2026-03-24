@@ -15,6 +15,7 @@ env/
 *.csv
 *.xls
 *.xlsm
+**/*.zip
 
 # Distribution / packaging
 dist/

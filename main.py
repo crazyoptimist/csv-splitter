@@ -2,7 +2,7 @@ import pandas as pd
 import math
 import os
 
-CHUNK_SIZE = 100_000
+CHUNK_SIZE = 45_000
 
 
 def split_csv_to_excel(input_csv, output_dir, chunk_size=10000):
@@ -17,7 +17,7 @@ def split_csv_to_excel(input_csv, output_dir, chunk_size=10000):
     print(f"Creating {total_chunks} Excel files...")
 
     # Read CSV in chunks
-    reader = pd.read_csv(input_csv, chunksize=chunk_size)
+    reader = pd.read_csv(input_csv, chunksize=chunk_size, header=None)
 
     for i, chunk in enumerate(reader, start=1):
         output_path = os.path.join(output_dir, f"part_{i}.xlsx")
