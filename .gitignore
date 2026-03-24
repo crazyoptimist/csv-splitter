@@ -1,0 +1,30 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments (Virtual Envs)
+.venv/
+venv/
+ENV/
+env/
+
+# Excel & Data files (The "Big" stuff)
+# This prevents your 2M row splits from being uploaded
+**/*.xlsx
+*.csv
+*.xls
+*.xlsm
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Dependencies
+.pdm-python
+pdm.lock
